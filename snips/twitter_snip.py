@@ -9,7 +9,7 @@ class TwitterSnip(JSONSnip):
 
     endpoint = 'http://search.twitter.com/search.json'
 
-    def process_snip_args(self, snip_args):
+    def get_snip_args(self, snip_args):
 
         args = {
             'q': snip_args.get('params').pop(),

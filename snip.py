@@ -23,19 +23,19 @@ class Snip(object):
 
 class HTTPSnip(Snip):
     """
-    HTML content / HTTP resources snip.
+    HTTP resources base.
     """
 
     def _get_snip(self):
         """
         Kick of main flow of a snip lifecycle.
         """
-        self.args = self.process_snip_args(self.snip_args)
+        self.args = self.get_snip_args(self.snip_args)
         self.build_resource()
         self.get_resource()
         self.snip = self.parse_response(self.response)
 
-    def process_snip_args(self, snip_args):
+    def get_snip_args(self, snip_args):
         """
         Method which takes in the raw snip args (command line arguments).
         Processes anyway it so desires then returns a dict which is assigned
@@ -90,6 +90,9 @@ class HTTPSnip(Snip):
 
 
 class HTMLSnip(HTTPSnip):
+    """
+    HTML resource based snip. Note that the self.resource is a pyquery object.
+    """
 
     def get_resource(self):
         """
@@ -104,6 +107,9 @@ class HTMLSnip(HTTPSnip):
 
 
 class JSONSnip(HTTPSnip):
+    """
+    JSON resource snip. Note that the self.resource is a python dict object.
+    """
 
     def get_resource(self):
         resource = super(JSONSnip, self).get_resource()
