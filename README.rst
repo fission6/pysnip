@@ -35,6 +35,6 @@ Initial Roadmap
 Contribute
 ----------
 
-Right now the most essential contribution is to offer a snip by a git-pull. The more snips the better overview we will when considering how to refine the snip interface and whats needed.
+Right now the most essential contribution is to offer a snip by a git-pull. The more snips the better overview we will when considering how to refine the snip interface and whats needed.  You can model your snips after snips in the snips/ path / module.
 
 To conclude, a simple pull request for the snip you've implemented would be great.
