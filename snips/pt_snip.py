@@ -1,13 +1,13 @@
-from snip import Snip
+from snip import HTMLSnip
 
 
-class PTSnip(Snip):
+class PTSnip(HTMLSnip):
 
     """
     PT snip implementation
     """
 
-    resource = 'http://phantasytour.com/bands/1/topics'
+    endpoint = 'http://phantasytour.com/bands/1/topics'
 
     def render_snip(self, snip):
 

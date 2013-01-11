@@ -7,7 +7,25 @@ class TwitterSnip(JSONSnip):
     PT snip implementation
     """
 
-    resource = 'http://search.twitter.com/search.json?q=python&rpp=10&include_entities=true&result_type=mixed'
+    endpoint = 'http://search.twitter.com/search.json'
+
+    def process_snip_args(self, snip_args):
+
+        args = {
+            'q': snip_args.get('params').pop(),
+        }
+
+        return args
+
+    def get_request_parameters(self):
+
+        params = {
+            'q': self.args.get('q'),
+            'rpp': '10',
+            'include_entities': 'true',
+            'result_type': 'mixed',
+        }
+        return params
 
     def render_snip(self, snip):
 
