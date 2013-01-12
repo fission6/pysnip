@@ -1,4 +1,5 @@
 from snip import *
+from snip.management import commands
 import argparse
 
 
@@ -24,3 +25,8 @@ if __name__ == "__main__":
         snip_class = registered_snips.get(snip_slug)
         snip = snip_class(args)
         snip.display()
+
+    elif snip_slug in commands:
+        command = commands.get(snip_slug)
+        # if function then call
+        command()

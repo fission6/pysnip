@@ -14,7 +14,7 @@ class SlashdotSnip(HTMLSnip):
 
         # loop through threads and print them out
         for item in snip:
-            print "**{title}** \n\n {summary} \n\n".format(**item)
+            print u"**{title}** \n\n {summary} \n\n".format(**item)
 
     def parse_response(self, response):
 
