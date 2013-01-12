@@ -8,6 +8,7 @@ class PTSnip(HTMLSnip):
     """
 
     endpoint = 'http://phantasytour.com/bands/1/topics'
+    snip_slug = 'pt'
 
     def render_snip(self, snip):
 

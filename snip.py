@@ -4,8 +4,29 @@ import json
 import urllib
 import pprint
 
+registered_snips = {}
+
+
+def register(cls):
+    # set the regitered slug for the snip,
+    # if no slug fall back to __name__
+    # should through error if no slug.
+    if hasattr(cls, 'snip_slug'):
+        registered_snips[cls.snip_slug] = cls
+    return cls
+
+
+class SnipPluginMount(type):
+
+    def __new__(cls, clsname, bases, attrs):
+        newclass = super(cls, SnipPluginMount).__new__(cls, clsname, bases, attrs)
+        register(newclass)  # here is your register function
+        return newclass
+
 
 class Snip(object):
+
+    __metaclass__ = SnipPluginMount
 
     def __init__(self, snip_args, **kwargs):
         """

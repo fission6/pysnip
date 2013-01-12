@@ -1,15 +1,8 @@
-from snips import *
+import snips
 import argparse
 
 
-def load_snip_routes():
-
-    return {
-        'twitter': TwitterSnip,
-        'pt': PTSnip,
-    }
-
-snip_routes = load_snip_routes()
+snip_routes = snips.registered_snips
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

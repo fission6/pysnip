@@ -8,6 +8,7 @@ class TwitterSnip(JSONSnip):
     """
 
     endpoint = 'http://search.twitter.com/search.json'
+    snip_slug = 'twitter'
 
     def get_snip_args(self, snip_args):
 

@@ -4,12 +4,12 @@ to allow for pluggable modules, known as "snips" to be seamlessly included and i
 example snips for phantasytour.com, twitter.com, ... The end goal is not necessarily a command line browser but rather a robust "snip" manager where people can easily install, remove, update, modify snips for resources.
 
 Install
-* working on a pip package though not stable enough at the moment.
-* fork / clone through github and directly run with python as noted below in 'Usage'
+- working on a pip package though not stable enough at the moment.
+- fork / clone through github and directly run with python as noted below in 'Usage'
 
 Usage
-* python pysnip.py pt
-* python pysnip.py twitter 'python'
+- python pysnip.py pt
+- python pysnip.py twitter 'python'
 
 eventually will have a bin script like `snip twitter python`
 
