@@ -9,7 +9,7 @@ def list_snips():
     print "Listing Available Snips"
 
     for snip in registered_snips:
-        print snip
+        print "*", snip
 
 
 commands = {
