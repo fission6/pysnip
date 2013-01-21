@@ -3,8 +3,7 @@ from snip.management import commands
 import argparse
 
 
-if __name__ == "__main__":
-
+def main():
     parser = argparse.ArgumentParser(description="""
         A pluggable tool to get a `snip` of small summary of a
         resource such as a webpage, webservice, or file.
@@ -30,3 +29,7 @@ if __name__ == "__main__":
         command = commands.get(snip_slug)
         # if function then call
         command()
+
+
+if __name__ == "__main__":
+    main()
