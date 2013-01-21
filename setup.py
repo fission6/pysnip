@@ -2,13 +2,13 @@
 
 
 from setuptools import setup, find_packages
-import pysnip
+
 
 requires = []
 print find_packages()
 setup(
     name='pysnip',
-    version=pysnip.__version__,
+    version='0.1',
     description='Create small text summaries or "snips" from resources.',
     long_description=open('README.rst').read(),
     author='fission6',
