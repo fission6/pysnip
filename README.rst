@@ -10,13 +10,16 @@ Install
 -------
 
 - working on a pip package though not stable enough at the moment.
-- fork / clone through github and directly run with python as noted below in 'Usage'
+- fork / clone through github and directly:
+    1. git clone git@github.com:fission6/pysnip.git
+    2. python setup.py install (may need to sudo)
+
 
 Usage
 -----
 
-- python pysnip.py pt
-- python pysnip.py twitter 'python'
+- snip pt
+- snip twitter 'python'
 
 eventually will have a bin script like `snip twitter python`
 

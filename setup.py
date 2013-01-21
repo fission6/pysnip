@@ -16,6 +16,7 @@ setup(
     include_package_data=True,
     install_requires=[
         'straight.plugin==1.4.0-post-1',
+        'pyquery==1.2.4',
     ],
     zip_safe=False,
     entry_points={
