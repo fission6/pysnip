@@ -25,12 +25,12 @@ Usage
 - snip twitter 'python'
 - snip twitter '#github'
 - snip --help
-- snip list # show all available `snips`
+- snip list
     Listing Available Snips
-    * wiki
-    * twitter
-    * slashdot
-    * pt
+    - wiki
+    - twitter
+    - slashdot
+    - pt
 
 Creating a Snip
 ---------------
