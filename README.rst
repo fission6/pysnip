@@ -14,14 +14,18 @@ Install
     1. git clone git@github.com:fission6/pysnip.git
     2. python setup.py install (may need to sudo)
 
+- install via pip
+    1. pip install git+https://github.com/fission6/pysnip.git
+
 
 Usage
 -----
 
 - snip pt
 - snip twitter 'python'
+- snip --help
+- snip twitter --help
 
-eventually will have a bin script like `snip twitter python`
 
 Initial Roadmap
 ---------------
