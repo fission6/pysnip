@@ -1,4 +1,4 @@
-from pysnip.types import HTMLSnip
+from pysnip.snip.types import HTMLSnip
 
 
 class PTSnip(HTMLSnip):

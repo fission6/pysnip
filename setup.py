@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 import pysnip
 
 requires = []
-
+print find_packages()
 setup(
     name='pysnip',
     version=pysnip.__version__,
@@ -20,7 +20,7 @@ setup(
     zip_safe=False,
     entry_points={
         'console_scripts': [
-            'snip = pysnip.pysnip:main',
+            'snip = pysnip.runner:main',
         ]
     },
     classifiers=(

@@ -1,4 +1,4 @@
-from pysnip.types import JSONSnip
+from pysnip.snip.snip.types import JSONSnip
 
 
 class TwitterSnip(JSONSnip):
