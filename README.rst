@@ -10,7 +10,7 @@ Install
 -------
 
 - working on a pip package though not stable enough at the moment.
-- fork / clone through github and directly:
+- fork / clone through github and install directly:
     1. git clone git@github.com:fission6/pysnip.git
     2. python setup.py install (may need to sudo)
 
@@ -23,8 +23,13 @@ Usage
 
 - snip pt
 - snip twitter 'python'
+- snip twitter '#github'
 - snip --help
-- snip twitter --help
+
+
+Creating a Snip
+---------------
+to be filled out shortly.
 
 
 Initial Roadmap
