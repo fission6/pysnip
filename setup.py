@@ -20,7 +20,7 @@ setup(
     zip_safe=False,
     entry_points={
         'console_scripts': [
-            'snip = pysnip.main:main',
+            'snip = pysnip.pysnip:main',
         ]
     },
     classifiers=(
